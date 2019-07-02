@@ -1,2 +1,3 @@
-## Babe, Go Lift w/ Morgan Olson
-**Developer: Levi Winans**
+## Babe, Go Lift
+## with Morgan Olson
+*#*Developer: Levi Winans**
