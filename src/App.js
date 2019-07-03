@@ -11,7 +11,7 @@ import NutritionWeek from './components/NutritionWeek';
 import WarmUp from './components/programs/WarmUp';
 import CoolDown from './components/programs/CoolDown';
 import CircuitOne from './components/programs/CircuitOne';
-
+import Nutrition from './components/Nutrition';
 
 
 import * as routes from './constants/routes';
@@ -88,7 +88,7 @@ class App extends Component {
           }/>
           <Route exact path={routes.PN1} render={() =>
             currentUser &&
-            <WarmUp />
+            <Nutrition />
           }/>
         </Switch>
         </div>

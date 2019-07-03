@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
+// import { Link } from 'react-router-dom'
+import * as routes from '../constants/routes';
+
+
 export default class Register extends Component {
     state = {
         username: '',
@@ -43,7 +47,7 @@ export default class Register extends Component {
         return(
             <>
                 { this.state.logged
-                ? <Redirect to={`http://localhost:8000/users/:id`}/>
+                ? <Redirect to={routes.HOME}/>
                 : <RegisterForm changeHandler={this.changeHandler} onSubmit={this.onSubmit} username={username} password={password} value={email} value={verify_password}/>
                 }            
             </>
