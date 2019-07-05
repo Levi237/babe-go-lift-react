@@ -7,7 +7,7 @@ export default class SciWeek extends Component {
     render(){
         return(
             <>
-            <h1>Babe Science</h1>
+            <h1>Babe, Go Lift - Blogs</h1>
             <div className="sciWeek-container">
                 <section>
                     <div className="babeSci">
