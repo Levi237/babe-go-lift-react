@@ -7,7 +7,7 @@ export default class ExerciseWeek extends Component {
     render(){
         return(
             <>
-            <h1>My Weekly Exercise Program</h1>
+            <h1>Fit in 3 Weekly Workouts</h1>
             <div className="flex-container">
                 <section>
                     <div className="image">

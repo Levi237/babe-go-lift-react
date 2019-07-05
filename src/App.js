@@ -5,7 +5,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Nav from './components/Nav';
 import Login from './components/Login';
 import Register from './components/Register';
-import SciWeek from './components/SciWeek';
+import LiftBlogWeek from './components/LiftBlogWeek';
 import ExerciseWeek from './components/ExerciseWeek';
 import NutritionWeek from './components/NutritionWeek';
 import WarmUp from './components/programs/WarmUp';
@@ -54,7 +54,7 @@ class App extends Component {
         <Switch>
           <Route exact path={routes.HOME} render={() =>
             currentUser &&
-            <SciWeek />
+            <LiftBlogWeek />
           }/>
           <Route exact path={routes.PE1} render={() =>
             currentUser &&

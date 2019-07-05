@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import * as routes from '../constants/routes';
 
-export default class SciWeek extends Component {
+export default class LiftBlogWeek extends Component {
     render(){
         return(
             <>
