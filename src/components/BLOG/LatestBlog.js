@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom'
 // import * as routes from '../../constants/routes';
 
-export default class LiftBlog extends Component {
+export default class LatestBlog extends Component {
     render(){
         return(
             <>
-            <h1>Babe, Go Lift - Blogs</h1>
+            <h1>Latest Blog</h1>
             <div className="sciWeek-container">
                 <section>
                     <div className="babeSci">

@@ -17,6 +17,8 @@ import Conditioning from './components/LIFT/Conditioning'
 import Recipes from './components/EAT/Recipes'
 import Groceries from './components/EAT/Groceries'
 import EatBlog from './components/EAT/EatBlog'
+import LatestBlog from './components/BLOG/LatestBlog'
+import BlogList from './components/BLOG/BlogList'
 
 
 import * as routes from './constants/routes';
@@ -58,10 +60,11 @@ class App extends Component {
         <Switch>
           <Route exact path={routes.LIFT} render={() => currentUser &&
             <LiftBlog /> }/>
-          <Route exact path={routes.EAT} render={() => currentUser &&
-            <EatBlog /> }/>
           <Route exact path={routes.PE1} render={() => currentUser &&
             <WarmUp />  }/>
+          <Route exact path={routes.EAT} render={() => currentUser &&
+            <EatBlog /> }/>
+          <Route exact path={routes.BLOG} render={() => <LatestBlog /> }/>
         </Switch>
         </div>
 
@@ -71,6 +74,7 @@ class App extends Component {
             <ExerciseWeek /> }/>
           <Route exact path={routes.EAT} render={() => currentUser &&
             <MealPlan />  }/>
+          <Route exact path={routes.BLOG} render={() => <BlogList /> }/>
           <Route exact path={routes.PE1} render={() => currentUser &&
             <CircuitOne /> }/>
         </Switch>
