@@ -6,6 +6,7 @@ import * as routes from '../constants/routes';
 
 const Nav = ({currentUser, logoutUser}) => 
 <div className="navBox">
+    <NavLink activeClassName="" to={routes.HOME}>HOME</NavLink>
     <NavLink activeClassName="" to={routes.LIFT}>LIFT</NavLink>
     <NavLink activeClassName="" to={routes.EAT}>EAT</NavLink>
     <NavLink activeClassName="" to={routes.BLOG}>BLOG</NavLink>
