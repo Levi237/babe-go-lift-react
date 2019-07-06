@@ -12,6 +12,8 @@ import WarmUp from './components/programs/WarmUp';
 import CoolDown from './components/programs/CoolDown';
 import CircuitOne from './components/programs/CircuitOne';
 import Nutrition from './components/Nutrition';
+import AccessoryWorkouts from './components/AccessoryWorkouts'
+import Conditioning from './components/Conditioning'
 
 
 import * as routes from './constants/routes';
@@ -80,7 +82,7 @@ class App extends Component {
         <Switch>
           <Route exact path={routes.LIFT} render={() =>
             currentUser &&
-            <NutritionWeek /> 
+            <AccessoryWorkouts /> 
           }/>
           <Route  path={routes.PE1} render={() =>
             currentUser &&
@@ -97,7 +99,7 @@ class App extends Component {
         <Switch>
           <Route exact path={routes.LIFT} render={() =>
             currentUser &&
-            <NutritionWeek /> 
+            <Conditioning /> 
           }/>
           <Route  path={routes.PE1} render={() =>
             currentUser &&

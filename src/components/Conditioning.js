@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import * as routes from '../constants/routes';
 
-export default class ExerciseWeek extends Component {
+export default class Conditioning extends Component {
     render(){
         return(
             <>
-            <h1>Fit in 3 Weekly Workouts</h1>
+            <h1>Conditioning</h1>
             <div className="flex-container">
                 <section>
                     <Link to={routes.PE1}>
@@ -16,7 +16,7 @@ export default class ExerciseWeek extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 1</span>
+                        <span>TEXT SPAN 1</span>
                     </div>
                 </section>
                 <section>
@@ -26,7 +26,7 @@ export default class ExerciseWeek extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 2</span>
+                        <span>TEXT SPAN 2</span>
                     </div>
                 </section>
                 <section>
@@ -36,7 +36,7 @@ export default class ExerciseWeek extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 3</span>
+                        <span>TEXT SPAN 3</span>
                     </div>
                 </section>
             </div>

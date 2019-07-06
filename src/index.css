@@ -205,7 +205,7 @@ grid-template-areas:
   border-right: 1px solid rgb(0,0,0,.1);
   overflow: hidden;
 }
-.image > a > img {
+.image > img {
   width: 100%;
   margin-top: -50px;
   border-radius: 5px 5px 0 0;
