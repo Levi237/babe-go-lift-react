@@ -76,7 +76,24 @@ class App extends Component {
         </Switch>
         </div>
 
-        <div className="grid-bottom">
+        <div className="grid-second">
+        <Switch>
+          <Route exact path={routes.LIFT} render={() =>
+            currentUser &&
+            <NutritionWeek /> 
+          }/>
+          <Route  path={routes.PE1} render={() =>
+            currentUser &&
+            <CoolDown />
+          }/>
+          <Route exact path={routes.PN1} render={() =>
+            currentUser &&
+            <Nutrition />
+          }/>
+        </Switch>
+        </div>
+
+        <div className="grid-third">
         <Switch>
           <Route exact path={routes.LIFT} render={() =>
             currentUser &&
