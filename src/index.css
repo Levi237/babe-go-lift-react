@@ -79,7 +79,7 @@ grid-template-areas:
   padding: 21px;
 }
 
-.navBtn {
+.navBox > a {
   font-size: .8rem;
   letter-spacing: .1rem;
   margin: 20px;

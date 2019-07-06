@@ -6,10 +6,11 @@ import * as routes from '../constants/routes';
 
 const Nav = ({currentUser, logoutUser}) => 
 <div className="navBox">
-    <NavLink activeClassName="" className="navBtn" to={routes.LIFT}>LIFT</NavLink>
-    <NavLink activeClassName="" className="navBtn" to={routes.EAT}>EAT</NavLink>
+    <NavLink activeClassName="" to={routes.LIFT}>LIFT</NavLink>
+    <NavLink activeClassName="" to={routes.EAT}>EAT</NavLink>
+    <NavLink activeClassName="" to={routes.BLOG}>BLOG</NavLink>
     { currentUser &&
-    <NavLink className="navBtn" to={routes.HOME} onClick={logoutUser}>LOGOUT</NavLink> 
+    <NavLink to={routes.HOME} onClick={logoutUser}>LOGOUT</NavLink> 
     }
     </div>
 

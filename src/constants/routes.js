@@ -1,7 +1,8 @@
 export const ROOT = '/';
 export const HOME = '/home';
-export const LIFT = '/babe_go/lift';
-export const EAT  = '/babe_go/eat';
+export const LIFT = '/lift';
+export const EAT  = '/eat';
+export const BLOG = '/blog'
 export const INFO = '/info';
 export const USER = '/users/:id';
 export const PE1  = '/program/exercise/day1';

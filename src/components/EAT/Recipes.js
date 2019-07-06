@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom'
-import * as routes from '../constants/routes';
+import * as routes from '../../constants/routes';
 
-export default class NutritionWeek extends Component {
+export default class Recipes extends Component {
     render(){
         return(
             <>
-            <h1>My Weekly Nutrition Program</h1>
+            <h1>Recipes</h1>
             <div className="flex-container">
                 <section>
                         <Link to={routes.PN1}>

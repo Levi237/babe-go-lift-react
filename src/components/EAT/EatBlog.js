@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom'
-import * as routes from '../constants/routes';
+import * as routes from '../../constants/routes';
 
-export default class LiftBlog extends Component {
+export default class EatBlog extends Component {
     render(){
         return(
             <>
