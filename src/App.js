@@ -5,7 +5,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Nav from './components/Nav';
 import Login from './components/Login';
 import Register from './components/Register';
-import LiftBlogWeek from './components/LiftBlogWeek';
+import LiftBlog from './components/LiftBlog';
 import ExerciseWeek from './components/ExerciseWeek';
 import NutritionWeek from './components/NutritionWeek';
 import WarmUp from './components/programs/WarmUp';
@@ -30,7 +30,7 @@ class App extends Component {
     this.setState({
       currentUser: null
     })
-    // this.props.history.push(routes.HOME)
+    // this.props.history.push(routes.LIFT)
   }
 
   render(){
@@ -52,9 +52,9 @@ class App extends Component {
           }
 
         <Switch>
-          <Route exact path={routes.HOME} render={() =>
+          <Route exact path={routes.LIFT} render={() =>
             currentUser &&
-            <LiftBlogWeek />
+            <LiftBlog />
           }/>
           <Route exact path={routes.PE1} render={() =>
             currentUser &&
@@ -65,7 +65,7 @@ class App extends Component {
 
         <div className="grid-main">
         <Switch>
-          <Route exact path={routes.HOME} render={() =>
+          <Route exact path={routes.LIFT} render={() =>
             currentUser &&
             <ExerciseWeek /> 
           }/>
@@ -78,7 +78,7 @@ class App extends Component {
 
         <div className="grid-bottom">
         <Switch>
-          <Route exact path={routes.HOME} render={() =>
+          <Route exact path={routes.LIFT} render={() =>
             currentUser &&
             <NutritionWeek /> 
           }/>
