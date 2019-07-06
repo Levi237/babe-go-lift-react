@@ -10,25 +10,31 @@ export default class NutritionWeek extends Component {
             <h1>My Weekly Nutrition Program</h1>
             <div className="flex-container">
                 <section>
+                        <Link to={routes.PN1}>
                     <div className="image">
-                        <Link to={routes.PN1}><img src="smoothie.png" /></Link>
+                        <img src="smoothie.png" />
                     </div>
+                        </Link>
                     <div className="title">
                         <span>Nutrition Point 1</span>
                     </div>
                 </section>
                 <section>
+                    <Link to={routes.PN1}>
                     <div className="image">
-                    <Link to={routes.PN1}><img src="fruit.png" /></Link>
+                    <img src="fruit.png" />
                     </div>
+                    </Link>
                     <div className="title">
                         <span>Nutrition Point 2</span>
                     </div>
                 </section>
                 <section>
+                    <Link to={routes.PN1}>
                     <div className="image">
-                    <Link to={routes.PN1}><img src="pizza.png" /></Link>
+                    <img src="pizza.png" />
                     </div>
+                    </Link>
                     <div className="title">
                         <span>Nutrition Point 3</span>
                     </div>
