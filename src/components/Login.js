@@ -16,6 +16,7 @@ export default class Login extends Component {
     }
     submitLogin = async (e) => {
         e.preventDefault();
+        console.log(this.state, "<---- login this.state")
         const loginResponse = await fetch('http://localhost:8000/users/login', {
             method: 'POST',
             credentials: 'include',
@@ -25,12 +26,15 @@ export default class Login extends Component {
             }    
         })
         const parsedResponse = await loginResponse.json();
-        if(parsedResponse) {
-            this.props.doSetCurrentUser(parsedResponse)
+        console.log(parsedResponse, "<----- parsedResponse for Login")
+        if(parsedResponse.user) {
+            console.log(parsedResponse.user, "<----- parsedResponse.user for Login")
+            this.props.doSetCurrentUser(parsedResponse.user)
                 this.setState({
-                    logged: true,
+                    logged: true
                 })
-        }
+            }
+            console.log(this.state, "<======= login this.state post logged")
     }
 
     render(){

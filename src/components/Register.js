@@ -32,7 +32,7 @@ export default class Register extends Component {
                 })
                 const parsedResponse = await registerResponse.json();
                 console.log(parsedResponse, "<----- parsedResponse")
-                console.log(parsedResponse.user, "<----- parsedResponse.user")
+                // console.log(parsedResponse.user, "<----- parsedResponse.user")
                 if(parsedResponse) {
                     this.props.doSetCurrentUser(parsedResponse)
                         this.setState({
@@ -48,7 +48,7 @@ export default class Register extends Component {
             <>
                 { this.state.logged
                 ? <Redirect to={routes.HOME}/>
-                : <RegisterForm changeHandler={this.changeHandler} onSubmit={this.onSubmit} username={username} password={password} value={email} value={verify_password}/>
+                : <RegisterForm changeHandler={this.changeHandler} onSubmit={this.onSubmit} username={username} password={password} email={email} verify_password={verify_password}/>
                 }            
             </>
         )

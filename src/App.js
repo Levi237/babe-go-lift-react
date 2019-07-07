@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+// import { Switch, Route, withRouter } from 'react-router-dom';
 
 
 import Nav from './components/Nav';
@@ -25,9 +26,11 @@ import * as routes from './constants/routes';
 
 class App extends Component {
   state = {
-    currentUser: [],
+    currentUser: null,
   }
 
+
+  
   doSetCurrentUser = user => {
     this.setState({
       currentUser: user
@@ -45,7 +48,10 @@ class App extends Component {
     return(
       <div className="grid-container">
         <div className="grid-nav">
-        <h1>Babe, Go Lift.</h1>
+        { currentUser
+        ? <h1>{currentUser.username}, Go Lift.</h1>
+        : <h1>Babe, Go Lift.</h1>
+        }
           <Nav currentUser={currentUser} logoutUser={this.logoutUser} />
         </div>
 
@@ -58,51 +64,37 @@ class App extends Component {
           }
 
         <Switch>
-          <Route exact path={routes.LIFT} render={() => currentUser &&
-            <LiftBlog /> }/>
-          <Route exact path={routes.PE1} render={() => currentUser &&
-            <WarmUp />  }/>
-          <Route exact path={routes.EAT} render={() => currentUser &&
-            <EatBlog /> }/>
-          <Route exact path={routes.BLOG} render={() => <LatestBlog /> }/>
+          <Route path={routes.BLOG} exact render={() => <LatestBlog /> }/>
+          <Route path={routes.LIFT} exact render={() => currentUser.username && <LiftBlog /> }/>
+          <Route path={routes.PE1}  exact render={() => currentUser.username && <WarmUp />  }/>
+          <Route path={routes.EAT}  exact render={() => currentUser.username && <EatBlog /> }/>
         </Switch>
         </div>
 
         <div className="grid-main">
         <Switch>
-          <Route exact path={routes.LIFT} render={() => currentUser &&
-            <ExerciseWeek /> }/>
-          <Route exact path={routes.EAT} render={() => currentUser &&
-            <MealPlan />  }/>
-          <Route exact path={routes.BLOG} render={() => <BlogList /> }/>
-          <Route exact path={routes.PE1} render={() => currentUser &&
-            <CircuitOne /> }/>
+          <Route path={routes.BLOG} exact render={() => <BlogList /> }/>
+          <Route path={routes.LIFT} exact render={() => currentUser.username && <ExerciseWeek /> }/>
+          <Route path={routes.PE1}  exact render={() => currentUser.username && <CircuitOne /> }/>
+          <Route path={routes.EAT}  exact render={() => currentUser.username && <MealPlan />  }/>
         </Switch>
         </div>
 
         <div className="grid-second">
         <Switch>
-          <Route exact path={routes.LIFT} render={() => currentUser &&
-            <AccessoryWorkouts /> }/>
-          <Route exact path={routes.EAT} render={() => currentUser &&
-            <Recipes /> }/>
-          <Route  path={routes.PE1} render={() => currentUser &&
-            <CoolDown /> }/>
-          <Route exact path={routes.PN1} render={() => currentUser &&
-            <Nutrition /> }/>
+          <Route path={routes.LIFT} exact render={() => currentUser.username && <AccessoryWorkouts /> }/>
+          <Route path={routes.PE1}  exact render={() => currentUser.username && <CoolDown /> }/>
+          <Route path={routes.EAT}  exact render={() => currentUser.username && <Recipes /> }/>
+          <Route path={routes.PN1}  exact render={() => currentUser.username && <Nutrition /> }/>
         </Switch>
         </div>
 
         <div className="grid-third">
         <Switch>
-          <Route exact path={routes.LIFT} render={() => currentUser &&
-            <Conditioning /> }/>
-          <Route exact path={routes.EAT} render={() => currentUser &&
-            <Groceries /> }/>
-          <Route  path={routes.PE1} render={() => currentUser &&
-            <CoolDown /> }/>
-          <Route exact path={routes.PN1} render={() => currentUser &&
-            <Nutrition /> }/>
+          <Route path={routes.LIFT} exact render={() => currentUser.username && <Conditioning /> }/>
+          <Route path={routes.PE1}  exact render={() => currentUser.username && <CoolDown /> }/>
+          <Route path={routes.EAT}  exact render={() => currentUser.username && <Groceries /> }/>
+          <Route path={routes.PN1}  exact render={() => currentUser.username && <Nutrition /> }/>
         </Switch>
         </div>
 

@@ -12,7 +12,7 @@ export default class Groceries extends Component {
                 <section>
                         <Link to={routes.PN1}>
                     <div className="image">
-                        <img src="../smoothie.png" />
+                        <img src="../smoothie.png" alt="nutrition1" />
                     </div>
                         </Link>
                     <div className="title">
@@ -22,7 +22,7 @@ export default class Groceries extends Component {
                 <section>
                     <Link to={routes.PN1}>
                     <div className="image">
-                    <img src="../fruit.png" />
+                    <img src="../fruit.png" alt="nutrition2" />
                     </div>
                     </Link>
                     <div className="title">
@@ -32,7 +32,7 @@ export default class Groceries extends Component {
                 <section>
                     <Link to={routes.PN1}>
                     <div className="image">
-                    <img src="../pizza.png" />
+                    <img src="../pizza.png" alt="nutrition3" />
                     </div>
                     </Link>
                     <div className="title">

@@ -12,7 +12,7 @@ export default class ExerciseWeek extends Component {
                 <section>
                     <Link to={routes.PE1}>
                         <div className="image">
-                            <img src="../dead-lift.png" />
+                            <img src="../dead-lift.png" alt="Exercise1" />
                         </div>
                     </Link>
                     <div className="title">
@@ -22,7 +22,7 @@ export default class ExerciseWeek extends Component {
                 <section>
                     <Link to={routes.PE1}>
                         <div className="image">
-                            <img src="../lat-pull.png" />
+                            <img src="../lat-pull.png" alt="Exercise2" />
                         </div>
                     </Link>
                     <div className="title">
@@ -32,7 +32,7 @@ export default class ExerciseWeek extends Component {
                 <section>
                     <Link to={routes.PE1}>
                         <div className="image">
-                            <img src="../fly.png" />
+                            <img src="../fly.png" alt="Exercise3" />
                         </div>
                     </Link>
                     <div className="title">
