@@ -6,18 +6,21 @@ import { Switch, Route } from 'react-router-dom';
 import Nav                from './components/Nav';
 import Login              from './components/Login';
 import Register           from './components/Register';
+
 import LiftBlog           from './components/LIFT/LiftBlog';
 import ExerciseWeek       from './components/LIFT/ExerciseWeek';
-import MealPlan           from './components/EAT/MealPlan';
+import AccessoryWorkouts  from './components/LIFT/AccessoryWorkouts'
+import Conditioning       from './components/LIFT/Conditioning'
 import WarmUp             from './components/LIFT/programs/WarmUp';
 import CoolDown           from './components/LIFT/programs/CoolDown';
 import CircuitOne         from './components/LIFT/programs/CircuitOne';
-import Nutrition          from './components/Nutrition';
-import AccessoryWorkouts  from './components/LIFT/AccessoryWorkouts'
-import Conditioning       from './components/LIFT/Conditioning'
+
+import MealPlan           from './components/EAT/MealPlan';
+import Nutrition          from './components/EAT/Nutrition';
 import Recipes            from './components/EAT/Recipes'
 import Groceries          from './components/EAT/Groceries'
 import EatBlog            from './components/EAT/EatBlog'
+
 import LatestBlog         from './components/BLOG/LatestBlog'
 import BlogList           from './components/BLOG/BlogList'
 
@@ -48,11 +51,13 @@ export default class App extends Component {
     const { currentUser } = this.state
     return(
       <div className="grid-container">
+        <div className="grid-title">
+          { currentUser
+          ? <h1>{currentUser.username}, Go Lift.</h1>
+          : <h1>Babe, Go Lift.</h1>
+          }
+        </div>
         <div className="grid-nav">
-        { currentUser
-        ? <h1>{currentUser.username}, Go Lift.</h1>
-        : <h1>Babe, Go Lift.</h1>
-        }
           <Nav currentUser={currentUser} logoutUser={this.logoutUser} />
         </div>
 
@@ -65,6 +70,7 @@ export default class App extends Component {
           }
 
         <Switch>
+          <Route path={routes.HOME} exact render={() => currentUser && <><h1>Welcome {currentUser.username}</h1></> }/>
           <Route path={routes.BLOG} exact render={() => <LatestBlog /> }/>
           <Route path={routes.LIFT} exact render={() => currentUser && <LiftBlog /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <WarmUp />  }/>
@@ -74,6 +80,7 @@ export default class App extends Component {
 
         <div className="grid-main">
         <Switch>
+          <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s information could go?  this is grid-main</span></> }/>
           <Route path={routes.BLOG} exact render={() => <BlogList /> }/>
           <Route path={routes.LIFT} exact render={() => currentUser && <ExerciseWeek /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <CircuitOne /> }/>
@@ -83,6 +90,7 @@ export default class App extends Component {
 
         <div className="grid-second">
         <Switch>
+          <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s other information could go?  this is grid-second</span></> }/>
           <Route path={routes.LIFT} exact render={() => currentUser && <AccessoryWorkouts /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <CoolDown /> }/>
           <Route path={routes.EAT}  exact render={() => currentUser && <Recipes /> }/>
@@ -92,6 +100,7 @@ export default class App extends Component {
 
         <div className="grid-third">
         <Switch>
+          <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s other other information could be?  this is grid-third</span></> }/>
           <Route path={routes.LIFT} exact render={() => currentUser && <Conditioning /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <CoolDown /> }/>
           <Route path={routes.EAT}  exact render={() => currentUser && <Groceries /> }/>
@@ -100,6 +109,7 @@ export default class App extends Component {
         </div>
 
         <div className="grid-footer">
+        <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s FAQ could go?  this is grid-footer</span></> }/>
         
         </div>
       </div>

@@ -26,19 +26,19 @@ h1 {
   display: grid;
   /* width: 100%; */
   height: 100vh;
-  grid-template-rows: 60px auto auto auto auto 40px;
-  grid-template-columns: 100vw;
+  grid-template-rows: 60px auto auto auto auto 100px;
+  grid-template-columns: 40vw 60vw;
   justify-content: space-around, space-around, space-evenly;
   grid-gap: 0;
   /* background-color: #2196F3; */
   padding: 0;
 grid-template-areas:
-  ' nav '
-  ' header '
-  ' main '
-  ' second '
-  ' third '
-  ' footer ';
+  ' title nav '
+  ' header header '
+  ' main main '
+  ' second second '
+  ' third third '
+  ' footer footer ';
   grid-gap: 0;
 }
 
@@ -46,9 +46,31 @@ grid-template-areas:
   padding: 0 32px;
 }
 
-.grid-nav, .grid-footer {
+.grid-nav, .grid-title, .grid-footer {
   background-color: rgb(135, 35, 30);
 }
+
+/********************************************************************************************************/
+/***************************************                          ***************************************/
+/***************************************       GRID TITLE         ***************************************/
+/***************************************                          ***************************************/
+/********************************************************************************************************/
+.grid-title {
+  grid-area: title;
+  width: 40vw
+}
+
+.grid-title > h1 {
+  text-align: left;
+  position: absolute;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  z-index: 1;
+  color: white;
+  padding: 12px 32px;
+}
+
+
 
 /********************************************************************************************************/
 /***************************************                          ***************************************/
@@ -59,20 +81,12 @@ grid-template-areas:
 
 .grid-nav { 
   grid-area: nav;
-  width: 100vw;
+  width: 60vw;
   text-align: right;
   /* padding-top: 30px; */
 }
 
-.grid-nav > h1 {
-  text-align: left;
-  position: absolute;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  z-index: 1;
-  color: white;
-  padding: 12px 32px;
-}
+
 
 .navBox {
   width: auto;
