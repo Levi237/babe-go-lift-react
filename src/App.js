@@ -77,6 +77,10 @@ export default class App extends Component {
         </Switch>
         </div>
 
+        <div className="grid-bio">
+          <h1>This is where Intro Bio Goes</h1>
+        </div>
+
         <div className="grid-main">
         <Switch>
           <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s information could go?  this is grid-main</span></> }/>
