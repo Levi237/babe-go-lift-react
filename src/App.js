@@ -68,7 +68,6 @@ export default class App extends Component {
             <Login doSetCurrentUser={this.doSetCurrentUser}/>
             </>
           }
-
         <Switch>
           <Route path={routes.HOME} exact render={() => currentUser && <><h1>Welcome {currentUser.username}</h1></> }/>
           <Route path={routes.BLOG} exact render={() => <LatestBlog /> }/>
