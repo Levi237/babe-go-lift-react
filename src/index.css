@@ -123,8 +123,13 @@ grid-template-areas:
 /********************************************************************************************************/
 .grid-bio { 
   grid-area: bio;
-  text-align: right; 
+  text-align: center; 
   padding-right: 32px;
+}
+
+.grid-bio > img {
+  width: 20vw;
+  height: auto;
 }
 
 /********************************************************************************************************/
@@ -335,3 +340,7 @@ grid-template-areas:
   width: 120%;
   transition: all .3s;
 }
+
+
+
+

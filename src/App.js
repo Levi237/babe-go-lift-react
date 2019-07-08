@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 
 import Nav                from './components/Nav';
+import Bio                from './components/Bio'
 import Login              from './components/Login';
 import Register           from './components/Register';
 
@@ -78,7 +79,7 @@ export default class App extends Component {
         </div>
 
         <div className="grid-bio">
-          <h1>This is where Intro Bio Goes</h1>
+          <Bio />
         </div>
 
         <div className="grid-main">
