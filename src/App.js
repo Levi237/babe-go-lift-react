@@ -3,23 +3,23 @@ import { Switch, Route } from 'react-router-dom';
 // import { Switch, Route, withRouter } from 'react-router-dom';
 
 
-import Nav from './components/Nav';
-import Login from './components/Login';
-import Register from './components/Register';
-import LiftBlog from './components/LIFT/LiftBlog';
-import ExerciseWeek from './components/LIFT/ExerciseWeek';
-import MealPlan from './components/EAT/MealPlan';
-import WarmUp from './components/LIFT/programs/WarmUp';
-import CoolDown from './components/LIFT/programs/CoolDown';
-import CircuitOne from './components/LIFT/programs/CircuitOne';
-import Nutrition from './components/Nutrition';
-import AccessoryWorkouts from './components/LIFT/AccessoryWorkouts'
-import Conditioning from './components/LIFT/Conditioning'
-import Recipes from './components/EAT/Recipes'
-import Groceries from './components/EAT/Groceries'
-import EatBlog from './components/EAT/EatBlog'
-import LatestBlog from './components/BLOG/LatestBlog'
-import BlogList from './components/BLOG/BlogList'
+import Nav                from './components/Nav';
+import Login              from './components/Login';
+import Register           from './components/Register';
+import LiftBlog           from './components/LIFT/LiftBlog';
+import ExerciseWeek       from './components/LIFT/ExerciseWeek';
+import MealPlan           from './components/EAT/MealPlan';
+import WarmUp             from './components/LIFT/programs/WarmUp';
+import CoolDown           from './components/LIFT/programs/CoolDown';
+import CircuitOne         from './components/LIFT/programs/CircuitOne';
+import Nutrition          from './components/Nutrition';
+import AccessoryWorkouts  from './components/LIFT/AccessoryWorkouts'
+import Conditioning       from './components/LIFT/Conditioning'
+import Recipes            from './components/EAT/Recipes'
+import Groceries          from './components/EAT/Groceries'
+import EatBlog            from './components/EAT/EatBlog'
+import LatestBlog         from './components/BLOG/LatestBlog'
+import BlogList           from './components/BLOG/BlogList'
 
 
 import * as routes from './constants/routes';
