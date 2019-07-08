@@ -288,7 +288,7 @@ grid-template-areas:
 /***************************************                          ***************************************/
 /********************************************************************************************************/
 
- .outer-scroll {
+ .scroll {
   bottom: 0;
   /* margin: -150px 0 0 0; */
   width: 95vw;
@@ -297,13 +297,13 @@ grid-template-areas:
   overflow-y: hidden;
 }
 
-.inner-scroll { 
+.scroll > div { 
   width: 2000px; 
   position: relative;
   display: inline-block;
 }
 
-.inner-scroll > section {
+.scroll > div > section {
   float: left;
   padding: 0 20px 20px 0;
 }

@@ -8,8 +8,8 @@ export default class MealPlan extends Component {
         return(
             <>
             <h1>My Weekly Nutrition Program</h1>
-            <div className="outer-scroll">
-                <div className="inner-scroll">
+            <div className="scroll">
+                <div>
                     <section>
                             <Link to={routes.PN1}>
                         <div className="image">
