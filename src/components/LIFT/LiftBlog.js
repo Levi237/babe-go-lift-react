@@ -8,7 +8,7 @@ export default class LiftBlog extends Component {
         return(
             <>
             <h1>Babe, Go Lift - Blogs</h1>
-            <div className="sciWeek-container">
+            <div className="header-container">
                 <section>
                     <div className="babeSci">
                         <div className="content">

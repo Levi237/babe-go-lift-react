@@ -8,7 +8,7 @@ export default class LatestBlog extends Component {
         return(
             <>
             <h1>Latest Blog</h1>
-            <div className="sciWeek-container">
+            <div className="header-container">
                 <section>
                     <div className="babeSci">
                         <div className="content">
