@@ -34,7 +34,7 @@ export default class Login extends Component {
                     logged: true
                 })
             }
-            console.log(this.state, "<======= login this.state post logged")
+            
     }
 
     render(){

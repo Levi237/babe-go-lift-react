@@ -24,9 +24,9 @@ import BlogList from './components/BLOG/BlogList'
 
 import * as routes from './constants/routes';
 
-class App extends Component {
+export default class App extends Component {
   state = {
-    currentUser: null,
+    currentUser: {username: 'Jane'},
   }
 
 
@@ -44,6 +44,7 @@ class App extends Component {
   }
 
   render(){
+    console.log(this.state, "<======= login this.state post logged")
     const { currentUser } = this.state
     return(
       <div className="grid-container">
@@ -105,5 +106,3 @@ class App extends Component {
     )
   }
 }
-
-export default App;
