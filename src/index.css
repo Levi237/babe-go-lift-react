@@ -169,6 +169,7 @@ grid-template-areas:
 .flex-container > section, .header-container > section {
   border-radius: 5px;
   box-shadow: 2px 2px 40px 2px rgb(0,0,0,.1);
+  transition: all .3s;
 } 
 
 /********************************************************************************************************/
@@ -186,12 +187,12 @@ grid-template-areas:
   margin: 10px;
   width: 350px;
   height: 300px;
-  transition: all .3s;
+  
   font-size: 14px;
 
 }
 
-.flex-container > section:hover {
+.flex-container > section:hover, .header-container > section:hover {
   transform: scale(1.04);
   transition: all .3s;
 }
