@@ -17,7 +17,7 @@ export default class MealPlan extends Component {
                         </div>
                             </Link>
                         <div className="title">
-                            <span>Nutrition Point 1</span>
+                            <span>Nutrition Day 1</span>
                         </div>
                     </section>
                     <section>
@@ -27,7 +27,7 @@ export default class MealPlan extends Component {
                         </div>
                         </Link>
                         <div className="title">
-                            <span>Nutrition Point 2</span>
+                            <span>Nutrition Day 2</span>
                         </div>
                     </section>
                     <section>
@@ -37,7 +37,7 @@ export default class MealPlan extends Component {
                         </div>
                         </Link>
                         <div className="title">
-                            <span>Nutrition Point 3</span>
+                            <span>Nutrition Day 3</span>
                         </div>
                     </section>
                     <section>
@@ -47,7 +47,7 @@ export default class MealPlan extends Component {
                         </div>
                         </Link>
                         <div className="title">
-                            <span>Nutrition Point 3</span>
+                            <span>Nutrition Day 4</span>
                         </div>
                     </section>
                     <section>
@@ -57,7 +57,7 @@ export default class MealPlan extends Component {
                         </div>
                         </Link>
                         <div className="title">
-                            <span>Nutrition Point 3</span>
+                            <span>Nutrition Day 5</span>
                         </div>
                     </section>
                     <section>
@@ -67,7 +67,17 @@ export default class MealPlan extends Component {
                         </div>
                         </Link>
                         <div className="title">
-                            <span>Nutrition Point 3</span>
+                            <span>Nutrition Day 6</span>
+                        </div>
+                    </section>
+                    <section>
+                        <Link to={routes.PN1}>
+                        <div className="image">
+                        <img src="../fruit.png" alt="nutrition2" />
+                        </div>
+                        </Link>
+                        <div className="title">
+                            <span>Nutrition Day 7</span>
                         </div>
                     </section>
                 </div>
