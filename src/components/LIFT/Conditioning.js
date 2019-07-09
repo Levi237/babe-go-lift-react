@@ -16,7 +16,7 @@ export default class Conditioning extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 1</span>
+                        <span>Challenge 1</span>
                     </div>
                 </section>
                 <section>
@@ -26,7 +26,7 @@ export default class Conditioning extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 2</span>
+                        <span>Challenge 2</span>
                     </div>
                 </section>
                 <section>
@@ -36,7 +36,7 @@ export default class Conditioning extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 3</span>
+                        <span>Challenge 3</span>
                     </div>
                 </section>
             </div>

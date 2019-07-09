@@ -16,7 +16,7 @@ export default class AccessoryWorkouts extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 1</span>
+                        <span>Booty</span>
                     </div>
                 </section>
                 <section>
@@ -26,7 +26,7 @@ export default class AccessoryWorkouts extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 2</span>
+                        <span>Abs</span>
                     </div>
                 </section>
                 <section>
@@ -36,7 +36,40 @@ export default class AccessoryWorkouts extends Component {
                         </div>
                     </Link>
                     <div className="title">
-                        <span>Exercise Day 3</span>
+                        <span>Arms</span>
+                    </div>
+                </section>
+            </div>
+
+            <div className="flex-container">
+                <section>
+                    <Link to={routes.PE1}>
+                        <div className="image">
+                            <img src="../dead-lift.png" alt="Exercise1" />
+                        </div>
+                    </Link>
+                    <div className="title">
+                        <span>Lower Body</span>
+                    </div>
+                </section>
+                <section>
+                    <Link to={routes.PE1}>
+                        <div className="image">
+                            <img src="../lat-pull.png" alt="Exercise2" />
+                        </div>
+                    </Link>
+                    <div className="title">
+                        <span>Upper Body</span>
+                    </div>
+                </section>
+                <section>
+                    <Link to={routes.PE1}>
+                        <div className="image">
+                            <img src="../fly.png" alt="Exercise3" />
+                        </div>
+                    </Link>
+                    <div className="title">
+                        <span>Full Body</span>
                     </div>
                 </section>
             </div>
