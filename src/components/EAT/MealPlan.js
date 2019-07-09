@@ -43,7 +43,7 @@ export default class MealPlan extends Component {
                     <section>
                         <Link to={routes.PN1}>
                         <div className="image">
-                        <img src="../pizza.png" alt="nutrition3" />
+                        <img src="../smoothie.png" alt="nutrition3" />
                         </div>
                         </Link>
                         <div className="title">
@@ -53,7 +53,7 @@ export default class MealPlan extends Component {
                     <section>
                         <Link to={routes.PN1}>
                         <div className="image">
-                        <img src="../pizza.png" alt="nutrition3" />
+                        <img src="../fruit.png" alt="nutrition3" />
                         </div>
                         </Link>
                         <div className="title">
