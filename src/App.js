@@ -7,6 +7,7 @@ import Nav                from './components/Nav';
 import Bio                from './components/Bio'
 import Login              from './components/Login';
 import Register           from './components/Register';
+import UserHome           from './components/UserHome';
 
 import LiftBlog           from './components/LIFT/LiftBlog';
 import ExerciseWeek       from './components/LIFT/ExerciseWeek';
@@ -70,7 +71,7 @@ export default class App extends Component {
             </>
           }
         <Switch>
-          <Route path={routes.HOME} exact render={() => currentUser && <><h1>Welcome {currentUser.username}</h1></> }/>
+          <Route path={routes.HOME} exact render={() => currentUser && <UserHome currentUser={currentUser} /> }/>
           <Route path={routes.BLOG} exact render={() => <LatestBlog /> }/>
           <Route path={routes.LIFT} exact render={() => currentUser && <LiftBlog /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <WarmUp />  }/>
