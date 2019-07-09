@@ -127,9 +127,14 @@ grid-template-areas:
   padding-right: 32px;
 }
 
-.grid-bio > img {
+.imgBio {
   width: 20vw;
   height: auto;
+}
+
+.iconBio {
+  width: 40px;
+  margin: 5px;
 }
 
 /********************************************************************************************************/
