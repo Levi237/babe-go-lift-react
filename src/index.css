@@ -52,9 +52,10 @@ grid-template-areas:
   padding: 0 32px;
 }
 
-.grid-nav, .grid-title, .grid-header, .grid-bio {
+.grid-nav, .grid-title, .grid-header, .grid-bio, .grid-main, .grid-second, .grid-third  {
   /* background-color: rgb(135, 35, 30); */
   border-bottom: 1px lightgray solid;
+  /* padding: 20px 0; */
 }
 
 /********************************************************************************************************/
