@@ -52,7 +52,7 @@ grid-template-areas:
   padding: 0 32px;
 }
 
-.grid-nav, .grid-title, .grid-footer {
+.grid-nav, .grid-title, .grid-header, .grid-bio {
   /* background-color: rgb(135, 35, 30); */
   border-bottom: 1px lightgray solid;
 }
