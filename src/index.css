@@ -440,7 +440,7 @@ grid-template-areas:
   }
 
   .grid-header, .grid-bio, .grid-main, .grid-second, .grid-third {
-    padding: 5px 5vw;
+    padding: 10px 5vw;
     /* margin: 32px 0; */
   }
 
