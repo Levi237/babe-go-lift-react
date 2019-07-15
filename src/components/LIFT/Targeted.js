@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import * as routes from '../../constants/routes';
 
-export default class AccessoryWorkouts extends Component {
+export default class Targeted extends Component {
     render(){
         return(
             <>
-            <h1>Accessory Workouts</h1>
+            <h1>Targeted Workouts</h1>
             <div className="flex-container">
                 <section>
                     <Link to={routes.PE1}>

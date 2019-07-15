@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import * as routes from '../../constants/routes';
 
-export default class ExerciseWeek extends Component {
+export default class Workout extends Component {
     render(){
         return(
             <>

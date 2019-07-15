@@ -25,6 +25,24 @@ p {
 
 h1 {
   font-weight: 100;
+  display: block;
+  font-size: 1.7em;
+  margin-block-start: 0em;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+}
+
+.grid-title > h1 {
+  font-weight: 100;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
 }
 
 .grid-container {
@@ -48,8 +66,9 @@ grid-template-areas:
   grid-gap: 0;
 }
 
-.grid-header, .grid-main, .grid-second, .grid-third {
-  padding: 0 32px;
+.grid-header, .grid-bio, .grid-main, .grid-second, .grid-third {
+  padding: 32px;
+  /* margin: 32px 0; */
 }
 
 .grid-nav, .grid-title, .grid-header, .grid-bio, .grid-main, .grid-second, .grid-third  {
@@ -126,7 +145,7 @@ grid-template-areas:
 .grid-bio { 
   grid-area: bio;
   text-align: center; 
-  padding-right: 32px;
+  /* padding-right: 32px; */
 }
 
 .grid-bio > img {

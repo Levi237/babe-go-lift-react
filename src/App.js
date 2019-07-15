@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route }    from 'react-router-dom';
 // import { Switch, Route, withRouter } from 'react-router-dom';
 
 
-import Nav                from './components/Nav';
-import Bio                from './components/Bio'
-import Login              from './components/Login';
-import Register           from './components/Register';
-import UserHome           from './components/UserHome';
+import Nav          from './components/Nav';
+import Bio          from './components/Bio'
+import Login        from './components/Login';
+import Register     from './components/Register';
+import UserHome     from './components/UserHome';
 
-import LiftBlog           from './components/LIFT/LiftBlog';
-import ExerciseWeek       from './components/LIFT/ExerciseWeek';
-import AccessoryWorkouts  from './components/LIFT/AccessoryWorkouts'
-import Conditioning       from './components/LIFT/Conditioning'
-import WarmUp             from './components/LIFT/programs/WarmUp';
-import CoolDown           from './components/LIFT/programs/CoolDown';
-import CircuitOne         from './components/LIFT/programs/CircuitOne';
+import LiftBlog     from './components/LIFT/LiftBlog';
+import Workout      from './components/LIFT/Workout';
+import Targeted     from './components/LIFT/Targeted'
+import Conditioning from './components/LIFT/Conditioning'
+import WarmUp       from './components/LIFT/programs/WarmUp';
+import CoolDown     from './components/LIFT/programs/CoolDown';
+import CircuitOne   from './components/LIFT/programs/CircuitOne';
 
-import MealPlan           from './components/EAT/MealPlan';
-import Nutrition          from './components/EAT/Nutrition';
-import Recipes            from './components/EAT/Recipes'
-import Groceries          from './components/EAT/Groceries'
-import EatBlog            from './components/EAT/EatBlog'
+import MealPlan     from './components/EAT/MealPlan';
+import Nutrition    from './components/EAT/Nutrition';
+import Recipes      from './components/EAT/Recipes'
+import Groceries    from './components/EAT/Groceries'
+import EatBlog      from './components/EAT/EatBlog'
 
-import LatestBlog         from './components/BLOG/LatestBlog'
-import BlogList           from './components/BLOG/BlogList'
+import LatestBlog   from './components/BLOG/LatestBlog'
+import BlogList     from './components/BLOG/BlogList'
 
+import * as routes  from './constants/routes';
 
-import * as routes from './constants/routes';
 
 export default class App extends Component {
   state = {
@@ -74,7 +74,7 @@ export default class App extends Component {
           <Route path={routes.HOME} exact render={() => currentUser && <UserHome currentUser={currentUser} /> }/>
           <Route path={routes.BLOG} exact render={() => <LatestBlog /> }/>
           <Route path={routes.LIFT} exact render={() => currentUser && <LiftBlog /> }/>
-          <Route path={routes.PE1}  exact render={() => currentUser && <WarmUp />  }/>
+          <Route path={routes.PE1}  exact render={() => currentUser && <WarmUp /> }/>
           <Route path={routes.EAT}  exact render={() => currentUser && <EatBlog /> }/>
         </Switch>
         </div>
@@ -87,7 +87,7 @@ export default class App extends Component {
         <Switch>
           <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s information could go?  this is grid-main</span></> }/>
           <Route path={routes.BLOG} exact render={() => <BlogList /> }/>
-          <Route path={routes.LIFT} exact render={() => currentUser && <ExerciseWeek /> }/>
+          <Route path={routes.LIFT} exact render={() => currentUser && <Workout /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <CircuitOne /> }/>
           <Route path={routes.EAT}  exact render={() => currentUser && <MealPlan />  }/>
         </Switch>
@@ -96,7 +96,7 @@ export default class App extends Component {
         <div className="grid-second">
         <Switch>
           <Route path={routes.HOME} render={() => currentUser && <><span>This is where {currentUser.username}'s other information could go?  this is grid-second</span></> }/>
-          <Route path={routes.LIFT} exact render={() => currentUser && <AccessoryWorkouts /> }/>
+          <Route path={routes.LIFT} exact render={() => currentUser && <Targeted /> }/>
           <Route path={routes.PE1}  exact render={() => currentUser && <CoolDown /> }/>
           <Route path={routes.EAT}  exact render={() => currentUser && <Recipes /> }/>
           <Route path={routes.PN1}  exact render={() => currentUser && <Nutrition /> }/>
