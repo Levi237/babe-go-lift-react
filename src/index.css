@@ -260,10 +260,11 @@ grid-template-areas:
 .image, .title{
   position: relative;
   background-color: white;
-  width: 350px;  
+  
 }
 
 .image {
+  width: 350px;  
   height: 200px;
   border-radius: 5px 5px 0 0;
   border-left: 1px solid rgb(0,0,0,.1);
@@ -280,7 +281,8 @@ grid-template-areas:
 }
 
 .title {
-  height: 100px;
+  width: 330px;  
+  height: 80px;
   padding: 10px;
   border-radius: 0 0 5px 5px;
   border: 1px solid rgb(0,0,0,.1);
