@@ -1,3 +1,7 @@
+/* background-color: rgb(135, 35, 30); */
+
+
+
 body {
   margin: 0;
   font-family: Tahoma, sans-serif;
@@ -297,8 +301,20 @@ grid-template-areas:
 }
 
 .content {
-  max-width: 500px;
+  width: 500px;
   overflow: hidden;
+  color: white;
+
+  /* padding-left: 32px; */
+}
+
+.content > h1 {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 10px;
+}
+
+.content > span {
+  padding: 0 10px;
 }
 
 .photo {
@@ -315,7 +331,8 @@ grid-template-areas:
   height: 200px;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid rgb(0,0,0,.1);
+  /* border: 1px solid rgb(0,0,0,.1); */
+  background-color: rgb(135, 35, 30);
 }
 
 /********************************************************************************************************/
