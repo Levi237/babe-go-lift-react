@@ -14,30 +14,30 @@ export default class Recipes extends Component {
                     <div className="image">
                         <img src="../smoothie.png" alt="nutrition1" />
                     </div>
-                        </Link>
                     <div className="title">
                         <span>Nutrition Point 1</span>
                     </div>
+                        </Link>
                 </section>
                 <section>
                     <Link to={routes.PN1}>
                     <div className="image">
                     <img src="../fruit.png" alt="nutrition2" />
                     </div>
-                    </Link>
                     <div className="title">
                         <span>Nutrition Point 2</span>
                     </div>
+                    </Link>
                 </section>
                 <section>
                     <Link to={routes.PN1}>
                     <div className="image">
                     <img src="../pizza.png" alt="nutrition3" />
                     </div>
-                    </Link>
                     <div className="title">
                         <span>Nutrition Point 3</span>
                     </div>
+                    </Link>
                 </section>
             </div>
             <div className="flex-container">
@@ -46,30 +46,30 @@ export default class Recipes extends Component {
                     <div className="image">
                         <img src="../smoothie.png" alt="nutrition1" />
                     </div>
-                        </Link>
                     <div className="title">
                         <span>Nutrition Point 1</span>
                     </div>
+                        </Link>
                 </section>
                 <section>
                     <Link to={routes.PN1}>
                     <div className="image">
                     <img src="../fruit.png" alt="nutrition2" />
                     </div>
-                    </Link>
                     <div className="title">
                         <span>Nutrition Point 2</span>
                     </div>
+                    </Link>
                 </section>
                 <section>
                     <Link to={routes.PN1}>
                     <div className="image">
                     <img src="../pizza.png" alt="nutrition3" />
                     </div>
-                    </Link>
                     <div className="title">
                         <span>Nutrition Point 3</span>
                     </div>
+                    </Link>
                 </section>
             </div>
             </>

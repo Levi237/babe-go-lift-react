@@ -8,7 +8,7 @@ import React, { Component } from 'react'
 export default class Nutrition extends Component {
     render(){
         return(
-            <h1>This is a Nutrition Component</h1>
+            <a href="https://www.levieiko.com"><h1>This is a Nutrition Component</h1></a>
         )
     }
 }
