@@ -31,8 +31,6 @@ export default class Register extends Component {
                     }
                 })
                 const parsedResponse = await registerResponse.json();
-                console.log(parsedResponse, "<----- parsedResponse")
-                // console.log(parsedResponse.user, "<----- parsedResponse.user")
                 if(parsedResponse) {
                     this.props.doSetCurrentUser(parsedResponse)
                         this.setState({
